@@ -1,0 +1,36 @@
+﻿<UserControl x:Class="ExternalRun.UserControl1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d">
+    <Grid x:Name="grd">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Content="דגימה" Grid.Row="0" Grid.Column="1"></Label>
+        <Label Content="איבר" Grid.Row="1" Grid.Column="1"></Label>
+        <Label Content="מיקום" Grid.Row="2" Grid.Column="1"></Label>
+        <Label Content="צד" Grid.Row="3" Grid.Column="1"></Label>
+        <Label Content="הערה" Grid.Row="4" Grid.Column="1"></Label>
+        <Label Content="קוד טיפול" Grid.Row="5" Grid.Column="1"></Label>
+        <ComboBox x:Name="cmbOrgan"  SelectionChanged="cmbOrgan_SelectionChanged" Grid.Row="1"></ComboBox>
+        <ComboBox  x:Name="cmbTOPOGRAPHY" Grid.Row="2" SelectionChanged="cmbTOPOGRAPHY_SelectionChanged"></ComboBox>
+        <ComboBox x:Name="cmbbSide" Grid.Row="3" ></ComboBox>
+        <TextBox  Grid.Row="4"></TextBox>
+        <ComboBox  Grid.Row="5"></ComboBox>
+        <Button Content="אישור" Grid.Row="6"></Button>
+        <Button Content="ביטול" Grid.Row="6" Grid.Column="1"></Button>
+    </Grid>
+   
+</UserControl>
